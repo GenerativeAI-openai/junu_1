@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "엔트리-알림 실시간 업데이트",
+    "version": "1.0",
+    "description": "엔트리에서 알람을 실시간으로 업데이트합니다.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "notifications",
+      "webNavigation",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://playentry.org/*"],
+        "js": ["content.js"]
+      }
+    ]
+}  
